@@ -3,17 +3,17 @@
         {
             "id":"1",
             "name":"Home",
-            "link":"grid",
+            "link":"/",
             "children":[
                 {
                     "name":"Home",
-                    "link":"grid"
+                    "link":"/"
                 }
             ]
         },
          {
             "id":"2",
-            "name":"Common",
+            "name":"Grid",
             "link":"common",
             "children":[
                 {
@@ -28,12 +28,12 @@
         },
          {
             "id":"3",
-            "name":"Common",
+            "name":"Chart",
             "link":"common",
             "children":[
                 {
-                    "name":"Added",
-                    "link":"grid"
+                    "name":"Chart",
+                    "link":"chart"
                 }
                  
             ]
