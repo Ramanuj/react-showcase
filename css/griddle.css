@@ -1,0 +1,90 @@
+.griddle-container{
+  border:1px solid #648B79;
+}
+
+.griddle .top-section{
+  clear:both;
+  display:table;
+  width:100%;
+}
+
+.griddle .griddle-filter{
+  float:left;
+  width:50%;
+  text-align:left;
+  color:#648B79;
+  min-height:1px;
+  font-family: 'Open Sans';
+}
+
+.griddle .griddle-settings-toggle{
+  float:left;
+  width:50%;
+  text-align:right;
+}
+
+.griddle .griddle-settings{
+  background-color:#222;
+  border:1px solid #DDD;
+  color:#FFF;
+  padding:10px;
+  margin-bottom:10px;
+}
+
+.griddle .griddle-settings .griddle-columns{
+  clear:both;
+  display:table;
+  width:100%;
+  border-bottom:1px solid #EDEDED;
+  margin-bottom:10px;
+}
+
+.griddle .griddle-settings .griddle-column-selection{
+  float:left;
+  width:20%;
+}
+.griddle table{
+  width:100%;table-layout:fixed;
+}
+
+.griddle th{
+  background-color:#648B79;
+  border:0px;
+  border-bottom:1px solid #DDD;
+  color:#FFF;
+  padding:5px;
+}
+
+.griddle td{
+  padding:5px;
+  background-color:#FFF;
+  border-top-color:#DDD;
+  color:#222;
+}
+
+.griddle .footer-container{
+  padding:0px;
+  background-color:#648B79;
+  border:0px;
+  color:#222;
+}
+
+.griddle .griddle-previous, .griddle .griddle-page, .griddle .griddle-next{
+  float:left;
+  width:33%;
+  min-height:1px;
+  margin-top:2px;
+  margin-bottom:2px;
+  background-color:#648B79;
+}
+
+.griddle .griddle-page{
+  text-align:center;
+  font-family: 'Open Sans';
+  color: cornsilk;
+}
+
+.griddle .griddle-next{
+  text-align:right;
+  font-family: 'Open Sans';
+}

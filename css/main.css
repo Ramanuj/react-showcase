@@ -1,0 +1,34 @@
+.main-content{
+    background-color: transparent;
+    margin-left: 65px;
+    padding-top: 50px;
+    font-family: 'Open Sans';
+    vertical-align: center;
+}
+
+.chart-content{
+    margin-left: 255px;
+    padding-top: 50px;
+    padding-right: 5px;
+    z-index: -9999;
+}
+
+.lchart{
+    background-color: transparent;
+    width: 40%;
+    float: left;
+}
+
+.piechart{
+    background-color:  transparent;
+    width: 40%;
+    float: right;
+    border: 1px solid #FFF;
+    height: 300px;
+}
+
+.home{
+    margin-left: 255px;
+    text-align:center;
+    font-family: 'Open Sans';
+}
