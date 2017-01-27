@@ -7,6 +7,6 @@ require("./css/layout.css");
 require("./css/main.css");
 require("./css/griddle.css");
 
-import App from './jsx/App.jsx';
+import App from './components/App.jsx';
 
 ReactDOM.render(<App />, document.getElementById('app'));

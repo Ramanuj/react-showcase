@@ -145,6 +145,7 @@ body{
 .submenu_item a{
 	padding: 5px;
 	color: D8D8D8;
+	display: block;
 }
 
 .submenu_item:hover {
@@ -152,8 +153,4 @@ body{
 	color:#D8D8D8;
 	font-weight: bold;
 	transition: all 0.3s ease-in-out;
-}
-
-.menu_item:hover{
-
 }
