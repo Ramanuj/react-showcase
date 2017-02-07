@@ -12,20 +12,14 @@ class Menu extends React.Component {
 	};
 
     renderMenu(menus) {
-        console.log('start rendering menu ' + menus);
-
         if(menus.length > 0){
             return menus.map((menu, index) => (
-                <MenuItem key={index} menu={menu} />
+                <MenuItem key={index} menu={menu} handler={this.props.handler}/>
             ));
         }
     }
 
     render() {
-
-        console.log("In Menu render method ");
-        console.log(this.props.data);
-
         return(
             <ul className ="navigation_selection">
                 {this.renderMenu(this.props.data)}

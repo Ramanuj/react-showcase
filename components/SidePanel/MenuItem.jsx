@@ -21,27 +21,13 @@ class MenuItem extends React.Component {
         this.setState( { toggleState : !this.state.toggleState } );
     }
 
-    renderChildren(submenus) {
-        console.log('start rendering submenus ' + submenus);
-
-        if(submenus.length > 0){
-            return submenus.map((submenu, index) => (
-                <SubMenu key={index} submenu={submenu} />
-            ));
-        }
-    }
-
     render(){
-
-        console.log("In MenuItem");
-        console.log(this.props.menu);
-
         return(
             <li className="navigation_item">
                 <div className="menu_item" onClick={this.handleClick}>
                     <span>{this.props.menu.name}</span> 
                     <span className={this.state.toggleState ? "fa fa-angle-double-up state-identifier" :"fa fa-angle-double-down state-identifier"}  ></span>
-                    <SubMenu submenu={this.props.menu.children} toggleState={this.state.toggleState}/>
+                    <SubMenu submenu={this.props.menu.children} toggleState={this.state.toggleState} handler={this.props.handler}/>
                 </div>
             </li>
         );

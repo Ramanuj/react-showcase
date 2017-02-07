@@ -2,7 +2,6 @@
     background-color: transparent;
     margin-left: 65px;
     padding-top: 50px;
-    font-family: 'Open Sans';
     vertical-align: center;
 }
 
@@ -30,5 +29,8 @@
 .home{
     margin-left: 255px;
     text-align:center;
-    font-family: 'Open Sans';
+}
+
+.jumbotron{
+	 background-color: #D1F2EB !important; 
 }

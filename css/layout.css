@@ -3,7 +3,6 @@
 	padding: 0;
 	text-decoration: none;
 	list-style: none;
-	font-family: 'Open Sans';
 }
 
 body{
@@ -23,7 +22,7 @@ body{
 	background-color: #648B79;
 	z-index: 1000000;
 	font-size: 2em;
-	opacity: 0;
+	opacity: 1;
 }
 
 .sidebar_menu {
@@ -57,7 +56,6 @@ body{
 }
 
 .boxed_item {
-	font-family: 'Open Sans';
 	font-weight: 200;
 	padding: 10px 20px;
 	display: inline-block;
@@ -75,7 +73,6 @@ body{
 
 .logo_title {
 	color: white;
-	font-family: 'Open Sans';
 	font-weight: 200;
 	font-size: 12px;
 	text-align: center;
@@ -91,7 +88,6 @@ body{
 
 .navigation_item {
 	font-weight: 200;
-	font-family: 'Open Sans';
 	padding: 12px 0;
 	color: #D8D8D8;
 	box-sizing: border-box;

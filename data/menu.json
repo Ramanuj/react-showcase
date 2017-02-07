@@ -1,0 +1,42 @@
+{
+    "menu":[
+        {
+            "id":"1",
+            "name":"Home",
+            "link":"home",
+            "children":[
+                {
+                    "name":"Home",
+                    "link":"home"
+                }
+            ]
+        },
+         {
+            "id":"2",
+            "name":"Grid",
+            "link":"grid",
+            "children":[
+                {
+                    "name":"Grid",
+                    "link":"grid"
+                },
+                 {
+                    "name":"Chart",
+                    "link":"chart"
+                }
+            ]
+        },
+         {
+            "id":"3",
+            "name":"Chart",
+            "link":"chart",
+            "children":[
+                {
+                    "name":"Added",
+                    "link":"grid"
+                }
+                 
+            ]
+        }
+    ]
+}

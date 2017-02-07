@@ -7,6 +7,8 @@ import SimplePieChart from './SimplePieChart.jsx';
 import SimpleBarChart from './SimpleBarChart.jsx';
 import SimpleRadarChart from './SimpleRadarChart.jsx';
 
+import { Grid, Row, Col } from 'react-bootstrap';
+
 class Chart extends React.Component {
 
     constructor(props) {
@@ -39,23 +41,24 @@ class Chart extends React.Component {
         if(this.state.data){
             return( 
                 <div className="chart-content">
-                    <div className="title">
-                        <Link to="/">
-                            Home
-                        </Link>
-                    </div>
-                    <div className='lchart'>
-                        <SimpleLineChart />
-                    </div>
-                    <div className='piechart'>
-                        <SimplePieChart />
-                    </div>
-                    <div className='lchart'>
-                        <SimpleBarChart />
-                    </div>
-                    <div className='piechart'>
-                        <SimpleRadarChart/>
-                    </div>
+                	<Grid>
+                		<Row className="show-grid">
+                			<Col xs={12} md={6}>
+                				<SimpleLineChart />
+                			</Col>
+                			<Col xs={12} md={6}>
+                				<SimplePieChart />
+                			</Col>
+                		</Row>
+                		<Row className="show-grid">
+            			<Col xs={12} md={6}>
+            				<SimpleBarChart />
+            			</Col>
+            			<Col xs={12} md={6}>
+            				<SimpleRadarChart />
+            			</Col>
+            		</Row>
+                	</Grid>
                 </div>
             );
         }else{
