@@ -17,6 +17,8 @@ import App from './containers/App'
 import HomePage from './pages/HomePage.js';
 import GridPage from './pages/GridPage.js';
 import ChartPage from './pages/ChartPage.js';
+import About from './pages/About.js';
+import GettingStarted from './pages/GettingStarted.js';
 
 const loggerMiddleware = createLogger();
 
@@ -36,6 +38,8 @@ ReactDOM.render(
 		      	 <Route path="/home" component={HomePage} />
 		      	 <Route path="/grid" component={GridPage} />
 		      	 <Route path="/chart" component={ChartPage} />
+		      	 <Route path="/getstarted" component={GettingStarted} />
+		      	 <Route path="/about" component={About} />
 		      </Route>
 		    </Router>
 		</Provider>,

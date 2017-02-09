@@ -4,6 +4,9 @@ import { Link } from 'react-router';
 
 import Menu from './Menu.jsx';
 
+import Help from './Help.jsx';
+import Logo from './Logo.jsx';
+
 class SidePanel extends React.Component {
 	
 	constructor(props) {
@@ -27,7 +30,11 @@ class SidePanel extends React.Component {
 						<div className ="sidebar_menu">
 							<i className="fa fa-times closeIcon" onClick={this.handleClick}></i>
 							
+							<Logo />
+							
 							<Menu data={this.props.value} handler={this.props.handler}/>
+						
+							<Help />
 						</div> 
 						: 
 						<div>

@@ -6,6 +6,8 @@ import { fetchData } from '../actions';
 
 import SidePanelContainer from './SidePanelContainer.js';
 import BreadCrumbContainer from './BreadCrumbContainer.js';
+import HeaderContainer from './HeaderContainer.js';
+
 
 import 'bootstrap/less/bootstrap.less';
 
@@ -28,7 +30,7 @@ class App extends Component {
 		return(
 			<div className="main">
 				<SidePanelContainer/>
-				Header
+				<HeaderContainer />
 				<BreadCrumbContainer/>
 				{this.props.children}
 			</div>

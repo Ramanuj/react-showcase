@@ -14,6 +14,7 @@ from
 
 import {fetchMenu} from './menuReducer.js';
 import {getPageName} from './pageReducer.js';
+import {fetchHeader} from './headerReducer.js';
 
 const posts = (state = {
 		  isFetching: false,
@@ -64,7 +65,8 @@ const fetchData = (state = { }, action) => {
 const rootReducer = combineReducers({
 	fetchData,
 	fetchMenu,
-	getPageName
+	getPageName,
+	fetchHeader
 })
 
 export default rootReducer

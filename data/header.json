@@ -1,0 +1,16 @@
+{
+	"apiVersion": "2.0",
+	"data": {
+		"name": "React Showcase",
+		"links":[
+			{
+				"name":"Getting Started",
+				"target":"getstarted"
+			},
+			{
+				"name":"About",
+				"target":"about"
+			}
+		]
+	}
+}
