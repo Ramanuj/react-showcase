@@ -35,7 +35,7 @@ const fetchPosts = data => dispatch => {
 	 * .then(json => dispatch(receiveData(data, json)))
 	 */
 	    
-	return fetch('./data/menu.json')
+	return fetch('./src/data/menu.json')
 	  		.then(function(response) {
 	  			return response.json()
 	  		}).then(function(json) {

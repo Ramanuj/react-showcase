@@ -6,7 +6,7 @@ var webpack = require('webpack');
 module.exports = {
 
 	entry : [ 'webpack-dev-server/client?http://localhost:7777',
-			'webpack/hot/only-dev-server', './main.js' ],
+			'webpack/hot/only-dev-server', './src/main.js' ],
 
 	output : {
 		path : path.resolve(__dirname, './build/'),
@@ -34,14 +34,13 @@ module.exports = {
 			loader : 'babel-loader',
 
 			query : {
-				presets : [  ],
-				plugins : [  ]
+				presets : [],
+				plugins : []
 			}
-		},{
-			test: /\.less/, 
+		}, {
+			test : /\.less/,
 			loader : "style-loader!css-loader!less-loader"
-		},
-		{
+		}, {
 			test : /\.css$/,
 			loader : "style-loader!css-loader"
 		}, {
@@ -59,8 +58,7 @@ module.exports = {
 		}, {
 			test : /\.(png|jpg)$/,
 			loader : 'url-loader?limit=8192'
-		}
-		]
+		} ]
 
 	}
 };

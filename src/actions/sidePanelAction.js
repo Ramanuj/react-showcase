@@ -38,7 +38,7 @@ const fetchMenus = (menu) => dispatch => {
 	//console.log("in fetchMenus");
 	dispatch(requestMenu(menu));
 	
-	return fetch('./data/menu.json')
+	return fetch('./src/data/menu.json')
 		.then(function(response) {
 			return response.json()
 		}).then(function(json) {

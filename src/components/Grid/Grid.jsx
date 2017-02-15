@@ -15,7 +15,7 @@ class Grid extends React.Component {
 	};
 
      getDataFromServer(){
-        $.getJSON("../data/grid.json",function(data){
+        $.getJSON("./src/data/grid.json",function(data){
             this.setState({data: data});
         }.bind(this));
     }

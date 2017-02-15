@@ -30,7 +30,7 @@ function receiveHeader(data, json){
 export const fetchHeader = (header) => (dispatch, getState) => {
 	dispatch(requestHeader(header));
 	
-	return fetch('./data/header.json')
+	return fetch('./src/data/header.json')
 		.then(function(response) {
 			return response.json()
 		}).then(function(json) {
